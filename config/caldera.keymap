@@ -45,7 +45,6 @@
 &kp CAPS   &trans  &kp A      &kp S      &kp D      &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans  &kp Z      &kp X      &kp C      &kp V        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &trans  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
