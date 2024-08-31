@@ -46,7 +46,7 @@
 &kp TAB    &kp TAB    &kp Q      &kp W      &kp E      &kp R        &none  &none  &none  &none  &none  &none
 &kp CAPS   &none      &kp A      &kp S      &kp D      &kp F        &none  &none  &none  &none  &none  &none
 &kp LSHFT  &none      &kp Z      &kp X      &kp C      &kp V        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp LCTRL  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp LCTRL  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &tog 2  &none  &none  &none  &none  &none
             >;
         };
     };
