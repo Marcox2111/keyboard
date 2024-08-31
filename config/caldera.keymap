@@ -36,7 +36,8 @@
 &trans   &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans  &kp LBKT   &kp RBKT   &kp DEL
 &trans   &trans        &trans        &kp LPAR      &kp RPAR      &trans          &trans      &trans        &trans  &trans     &trans     &trans
 &trans   &trans        &trans        &trans        &trans        &trans          &tog 2      &trans        &trans  &trans     &trans     &trans
-            >;
+&trans   &trans        &trans        &trans        &trans        &trans          &tog 2      &trans        &trans  &trans     &trans     &trans
+>;
         };
 
         Gaming {
