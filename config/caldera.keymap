@@ -24,7 +24,7 @@
             >;
         };
 
-        lower_layer {
+        Lower {
             // ------------------------------------------------------------------------------------------------------------
             // |       |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |          |       |       |       |       |       | BTCLR |
             // |       |       |       |       |       |       |          |       |       |       |       |       |       |
@@ -35,9 +35,9 @@
 &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &out OUT_BLE  &trans  &kp MINUS  &kp EQUAL  &trans
 &trans   &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans  &kp LBKT   &kp RBKT   &kp DEL
 &trans   &trans        &trans        &kp LPAR      &kp RPAR      &trans          &trans      &trans        &trans  &trans     &trans     &trans
+&trans   &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans  &trans     &trans     &trans
 &trans   &trans        &trans        &trans        &trans        &trans          &tog 2      &trans        &trans  &trans     &trans     &trans
-&trans   &trans        &trans        &trans        &trans        &trans          &tog 2      &trans        &trans  &trans     &trans     &trans
->;
+            >;
         };
 
         Gaming {
