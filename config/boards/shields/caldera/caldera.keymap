@@ -36,7 +36,7 @@
 &trans   &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans  &kp LBKT   &kp RBKT   &kp DEL
 &trans   &trans        &trans        &kp LPAR      &kp RPAR      &trans          &trans      &trans        &trans  &trans     &trans     &trans
 &trans   &trans        &trans        &trans        &trans        &trans          &trans      &trans        &trans  &trans     &trans     &trans
-&trans   &trans        &trans        &trans        &trans        &trans          &tog 2      &trans        &trans  &trans     &trans     &trans
+&trans   &trans        &trans        &trans        &trans        &trans          &to 2      &trans        &trans  &trans     &trans     &trans
             >;
         };
 
@@ -46,7 +46,7 @@
 &kp TAB    &kp TAB    &kp Q      &kp W      &kp E      &kp R        &none  &none  &none  &none  &none  &none
 &kp CAPS   &none      &kp A      &kp S      &kp D      &kp F        &none  &none  &none  &none  &none  &none
 &kp LSHFT  &none      &kp Z      &kp X      &kp C      &kp V        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp LCTRL  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &tog 2  &trans  &none  &none  &none  &none
+&kp LCTRL  &kp LCTRL  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE    &to 0  &trans  &none  &none  &none  &none
             >;
         };
     };
