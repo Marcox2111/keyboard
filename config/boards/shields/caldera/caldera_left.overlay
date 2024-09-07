@@ -10,23 +10,3 @@
         , <&pro_micro 2 GPIO_ACTIVE_HIGH>
         ;
 };
-
-&pro_micro_i2c {
-    status = "okay";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        label = "DISPLAY";
-        width = <128>;
-        height = <64>;  // Updated to 64 based on the image
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;  // Updated for 64-pixel height
-        com-invdir;
-        segment-remap;
-        com-sequential;
-        prechargep = <0x22>;
-    };
-};
