@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    chosen {
+        zmk,display = &oled;
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
