@@ -15,11 +15,21 @@ config ZMK_SPLIT
 
 if ZMK_DISPLAY
 
+config ZMK_DISPLAY
+    select LV_USE_CONT
+    select LV_FONT_MONTSERRAT_26
+    select LV_FONT_MONTSERRAT_16
+    select LV_USE_LABEL
+    select LV_USE_IMG
+
 config I2C
     default y
 
 config SSD1306
     default y
+
+config SSD1306_REVERSE_MODE
+    default n
 
 endif # ZMK_DISPLAY
 
@@ -28,7 +38,7 @@ if LVGL
 config LV_Z_VDB_SIZE
     default 64
 
-config LV_DPI_DEF
+config LV_Z_DPI_DEF
     default 148
 
 config LV_Z_BITS_PER_PIXEL
@@ -40,4 +50,4 @@ endchoice
 
 endif # LVGL
 
-endif
+endif # SHIELD_CALDERA_LEFT || SHIELD_CALDERA_RIGHT
