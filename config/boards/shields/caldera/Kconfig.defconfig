@@ -27,22 +27,22 @@ config SSD1306_REVERSE_MODE
 
 endif # ZMK_DISPLAY
 
-if LVGL
-
-config LV_Z_VDB_SIZE
-    default 64
-
-config LV_Z_DPI_DEF
-    int "LVGL DPI value"
-    default 148
-
-config LV_Z_BITS_PER_PIXEL
-    default 1
-
-choice LV_COLOR_DEPTH
-    default LV_COLOR_DEPTH_1
-endchoice
-
-endif # LVGL
+#if LVGL
+#
+#config LV_Z_VDB_SIZE
+#    default 64
+#
+#config LV_Z_DPI_DEF
+#    int "LVGL DPI value"
+#    default 148
+#
+#config LV_Z_BITS_PER_PIXEL
+#    default 1
+#
+#choice LV_COLOR_DEPTH
+#    default LV_COLOR_DEPTH_1
+#endchoice
+#
+#endif # LVGL
 
 endif # SHIELD_CALDERA_LEFT || SHIELD_CALDERA_RIGHT
