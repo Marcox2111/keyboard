@@ -15,13 +15,6 @@ config ZMK_SPLIT
 
 if ZMK_DISPLAY
 
-config ZMK_DISPLAY
-    select LV_USE_CONT
-    select LV_FONT_MONTSERRAT_26
-    select LV_FONT_MONTSERRAT_16
-    select LV_USE_LABEL
-    select LV_USE_IMG
-
 config I2C
     default y
 
