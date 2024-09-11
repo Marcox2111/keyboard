@@ -8,7 +8,7 @@ static lv_obj_t *hello_world_label;
 lv_obj_t *zmk_display_status_screen() {
     lv_obj_t *screen;
 
-    screen = lv_obj_create(NULL, NULL);
+    screen = lv_obj_create(NULL);
 
     hello_world_label = lv_label_create(screen, NULL);
     lv_label_set_text(hello_world_label, "Hello, Caldera!");
