@@ -1,4 +1,5 @@
 
+#include "custom_status_screen.h"
 #include "widgets/battery_status.h"
 #include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
