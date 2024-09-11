@@ -1,6 +1,6 @@
 if(CONFIG_ZMK_DISPLAY AND CONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM)
     zephyr_library()
-    zepryr_library_include_directories(${ZEPHYR_LVGL_MODULE_DIR})
+    zephyr_library_include_directories(${ZEPHYR_LVGL_MODULE_DIR})
     zephyr_library_sources(custom_status_screen.c)
     zephyr_library_include_directories(.)
 endif()
