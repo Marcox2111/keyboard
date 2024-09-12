@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+#define ZMK_SPLIT_BLE_PERIPHERAL_COUNT 2  // Or however many peripherals you have
 
 #include <zephyr/bluetooth/services/bas.h>
 #include <zephyr/kernel.h>
