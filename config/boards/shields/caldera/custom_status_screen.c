@@ -7,7 +7,7 @@
 #include "widgets/output_status.h"
 
 
-// static lv_obj_t *hello_world_label;
+static lv_obj_t *hello_world_label;
 
 static struct zmk_widget_output_status output_status_widget;
 static struct zmk_widget_layer_status layer_status_widget;
@@ -22,9 +22,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     screen = lv_obj_create(NULL);
 
-    // hello_world_label = lv_label_create(screen);
-    // lv_label_set_text(hello_world_label, "Hello, Caldera!");
-    // lv_obj_align(hello_world_label, LV_ALIGN_CENTER, 0, 0);
+    #if IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
     lv_style_init(&global_style);
     lv_style_set_text_font(&global_style, &lv_font_unscii_8);
     lv_style_set_text_letter_space(&global_style, 1);
@@ -46,5 +44,11 @@ lv_obj_t *zmk_display_status_screen() {
     lv_obj_align_to(zmk_widget_layer_status_obj(&layer_status_widget), zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
     zmk_widget_peripheral_battery_status_init(&peripheral_battery_status_widget, screen);
     lv_obj_align(zmk_widget_peripheral_battery_status_obj(&peripheral_battery_status_widget), LV_ALIGN_TOP_RIGHT, 0, 0);
+    #endif
+
+    #if !IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
+    hello_world_label = lv_label_create(screen);
+    lv_label_set_text(hello_world_label, "Hello, Caldera!");
+    lv_obj_align(hello_world_label, LV_ALIGN_CENTER, 0, 0);
     return screen;
 }
