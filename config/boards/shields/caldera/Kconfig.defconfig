@@ -7,11 +7,7 @@ if SHIELD_CALDERA_LEFT
 
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
-
-    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-        default 2
-        
-
+    
     if ZMK_DISPLAY
         config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
             select ZMK_WPM
