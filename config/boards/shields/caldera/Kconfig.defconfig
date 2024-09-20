@@ -36,7 +36,7 @@ if SHIELD_CALDERA_LEFT || SHIELD_CALDERA_RIGHT
     config SSD1306
         default y
 
-endif # ZMK_DISPLAY
+    endif # ZMK_DISPLAY
 
     if LVGL
 
