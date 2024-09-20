@@ -23,7 +23,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
 struct battery_status_state {
-  uint8_t level[ZMK_SPLIT_BLE_PERIPHERAL_COUNT];
+  uint8_t level[ZMK_SPLIT_BLE_PERIPHERAL_COUNT]; 
 } battery_state;
 
 struct battery_widget_object {
@@ -63,7 +63,7 @@ static void draw_battery(lv_obj_t *canvas, uint8_t level) {
 }
 
 static void set_battery_symbol(lv_obj_t *widged,
-                               struct battery_status_state state) {
+                               struct gb  state) {
 
   for (int i = 0; i < ZMK_SPLIT_BLE_PERIPHERAL_COUNT; i++) {
     uint8_t level = state.level[i];
@@ -109,8 +109,7 @@ int zmk_widget_peripheral_battery_status_init(
   lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
 
   for (int i = 0; i < ZMK_SPLIT_BLE_PERIPHERAL_COUNT; i++) {
-    battery_widget_objects[i].battery_image_canvas =
-        lv_canvas_create(widget->obj);
+    battery_widget_objects[i].battery_image_canvas = lv_canvas_create(widget->obj);
     battery_widget_objects[i].battery_label = lv_label_create(widget->obj);
 
     lv_canvas_set_buffer(battery_widget_objects[i].battery_image_canvas,
