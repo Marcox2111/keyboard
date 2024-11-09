@@ -5,10 +5,6 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/5x6.h"
 
-
-
-/ {
-
 ZMK_HOLD_TAP(hrm,
     flavor = "balanced";
     tapping-term-ms = <200>;
@@ -17,6 +13,10 @@ ZMK_HOLD_TAP(hrm,
 )
 
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+
+/ {
+
+
 
     keymap {
         compatible = "zmk,keymap";
